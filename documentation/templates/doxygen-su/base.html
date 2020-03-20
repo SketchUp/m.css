@@ -150,9 +150,12 @@
 <footer><nav>
   <div class="m-container">
     <div class="m-row">
-      <div class="m-col-l-10 m-push-l-1">
+      <div class="m-col-l-3 m-push-l-1" id="su-footer-trimble">
+        <img src="trimble-logo-small.png">
+      </div>
+      <div class="m-col-l-8">
         {% if M_PAGE_FINE_PRINT == '[default]' %}
-        <p>{{ PROJECT_NAME }}{% if PROJECT_BRIEF %} {{ PROJECT_BRIEF }}{% endif %}. Created with <a href="https://doxygen.org/">Doxygen</a> {{ DOXYGEN_VERSION }} and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+        <p>Created with <a href="https://doxygen.org/">Doxygen</a> {{ DOXYGEN_VERSION }} and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
         {% else %}
         {{ M_PAGE_FINE_PRINT|replace('{doxygen_version}', DOXYGEN_VERSION) }}
         {% endif %}
